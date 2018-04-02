@@ -1,0 +1,412 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="得分"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/defenA"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="550dp"
+                    android:layout_height="20dp">
+
+                    <ImageView
+                        android:id="@+id/img_teamA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/redjindutiao" />
+
+                    <ImageView
+                        android:id="@+id/img_teamB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bluejindutiao" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="end"
+                        android:id="@+id/defenB"
+                        android:layout_width="40dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="得分"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="助攻"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/zhugongA"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="550dp"
+                    android:layout_height="20dp"
+                  >
+
+                    <ImageView
+                        android:id="@+id/img_teamAz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/redjindutiao" />
+
+                    <ImageView
+                        android:id="@+id/img_teamBz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bluejindutiao" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="end"
+                        android:layout_gravity="center"
+                        android:id="@+id/zhugongB"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="助攻"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="篮板"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/lanbanA"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="550dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_teamAl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/redjindutiao" />
+
+                    <ImageView
+                        android:id="@+id/img_teamBl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bluejindutiao" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lanbanB"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                        android:gravity="end"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                        android:text="篮板"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="抢断"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/qiangduanA"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="550dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                   >
+
+                    <ImageView
+                        android:id="@+id/img_teamAq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/redjindutiao" />
+
+                    <ImageView
+                        android:id="@+id/img_teamBq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bluejindutiao" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/qiangduanB"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                        android:gravity="end"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="抢断"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="盖帽"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/gaimaoA"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="550dp"
+                    android:layout_height="20dp">
+
+                    <ImageView
+                        android:id="@+id/img_teamAg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/redjindutiao" />
+
+                    <ImageView
+                        android:id="@+id/img_teamBg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bluejindutiao" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/gaimaoB"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                        android:gravity="end"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="盖帽"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="犯规"
+                    android:layout_gravity="center"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/fanguiA"
+                    android:layout_width="40dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="550dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_teamAf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/redjindutiao" />
+
+                    <ImageView
+                        android:id="@+id/img_teamBf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bluejindutiao" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="end"
+                        android:id="@+id/fanguiB"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="犯规"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

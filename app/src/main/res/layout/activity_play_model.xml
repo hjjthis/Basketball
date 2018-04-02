@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onebg"
+    tools:context="activity.PlayModel">
+    <Button
+        android:id="@+id/bt_fanhui"
+        android:layout_marginTop="5dp"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:text=""
+        android:background="@drawable/back"/>
+<LinearLayout
+    android:id="@+id/photo"
+    android:layout_marginTop="35dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="34dp">
+    <LinearLayout
+
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_key"
+        android:layout_width="411px"
+        android:layout_height="243px"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shaozi"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_basketball"
+        android:layout_width="527px"
+        android:layout_height="527px"
+        android:background="@drawable/basetball"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_gravity="bottom"
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/img_guanzhong"
+        android:layout_width="300px"
+        android:layout_height="340px"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gaunzhong"/>
+</LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/bt"
+        android:layout_below="@+id/photo"
+        android:layout_marginTop="100px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="删除数据"
+            android:textColor="#e0a50a"
+            android:textSize="72px" />
+        <Button
+            android:textSize="72px"
+            android:background="#00000000"
+            android:textColor="#e15925"
+            android:layout_weight="1"
+            android:id="@+id/bt_chuangjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建比赛"/>
+        <Button
+            android:textSize="72px"
+            android:background="#00000000"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:id="@+id/bt_guanzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="球员数据"/>
+    </LinearLayout>
+
+</RelativeLayout>

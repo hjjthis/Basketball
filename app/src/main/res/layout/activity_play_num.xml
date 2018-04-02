@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.PlayNum">
+    <Button
+        android:id="@+id/bt_fanhui"
+        android:layout_marginTop="5dp"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:text=""
+        android:background="@drawable/back"/>
+<ListView
+    android:id="@+id/play_num"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+</ListView>
+
+</LinearLayout>

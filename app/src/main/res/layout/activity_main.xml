@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.MainActivity">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacgroundchangdi"/>
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:orientation="vertical">
+      <Button
+          android:id="@+id/jianyijifen"
+          android:onClick="jifen"
+          android:layout_width="709px"
+          android:layout_height="165px"
+          android:background="@drawable/simplycount"/>
+      <Button
+          android:id="@+id/jianyijishi"
+          android:onClick="jishi"
+          android:layout_width="709px"
+          android:layout_height="165px"
+          android:layout_marginTop="20dp"
+
+          android:background="@drawable/timemodeicon"/>
+      <Button
+          android:onClick="bisia"
+          android:id="@+id/bisaimoshi"
+          android:layout_width="709px"
+          android:layout_height="165px"
+          android:layout_marginTop="20dp"
+
+
+          android:background="@drawable/gamemodeicon"/>
+
+  </LinearLayout>
+    <Button
+        android:id="@+id/bt_fanhui"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:onClick="quit"
+        android:background="@drawable/exit"/>
+</RelativeLayout>
